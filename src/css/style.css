@@ -1,0 +1,68 @@
+html {
+   font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.principal{
+    display: flex;
+    justify-content: center;
+    margin: 35px 38px;
+    display: grid;
+    grid-template-columns:minmax(340px,1340px) repeat(2,auto);
+    grid-template-rows:repeat(10,auto);
+    /* grid-template-columns:minmax(340px,1340px) repeat(2,auto); */
+}
+
+.principal .video-grande .janela-video{
+    width: 100%;
+    grid-column-start:1;
+    grid-column-end: 3;
+    
+}
+.principal .video-grande .descricao-video p {
+
+    width: 80%;
+    font-size: 16px;
+    color: rgb(8, 8, 4);
+}
+
+.principal .lateral-direita {
+    width: 100%;
+    /* background-color: green; */
+    grid-column-start:3 ;
+    grid-column-end: auto;
+    grid-row-start: 1;
+    grid-row-end: 6;
+  
+}
+
+.principal .lateral-direita .anuncio {
+    border: 2px solid blue;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal .lateral-direita .novos-videos {
+
+    border: 2px solid blue;
+    display: flex;
+}
+
+
+.principal .lateral-direita .novos-videos .video-miniatura {
+    border: 2px solid blue;
+    width: 50%;
+    display: flex;
+   
+}
+
+.principal .lateral-direita .novos-videos .video-miniatura .descricao-miniatura {
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+
+}
+
